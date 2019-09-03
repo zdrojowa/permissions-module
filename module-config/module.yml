@@ -1,0 +1,7 @@
+name: PermissionsModule
+version: 1.0.0
+
+aclAnchor: PermissionsModule
+aclName: Paczki uprawnień
+
+routePrefix: PermissionsModule

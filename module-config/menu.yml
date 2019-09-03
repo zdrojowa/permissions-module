@@ -1,0 +1,13 @@
+permissions:
+  name: Paczki uprawnień
+  icon: mdi mdi-package-variant
+  permission: PermissionsModule
+  children:
+    list:
+      name: Lista
+      permission: PermissionsModule
+      route: PermissionsModule::permissions
+    add:
+      name: Dodaj
+      permission: PermissionsModule.permissions.create
+      route: PermissionsModule::permissions.create

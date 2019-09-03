@@ -1,0 +1,69 @@
+# Pobieranie paczek uprawnień #
+
+permissions:
+  path: /dashboard/permissions
+  controller: Selene\Modules\PermissionsModule\Http\Controllers\PermissionsController@index
+  methods:
+    - GET
+  permission: PermissionsModule
+
+
+
+permissions.ajax:
+  path: /dashboard/permissions/ajax
+  controller: Selene\Modules\PermissionsModule\Http\Controllers\PermissionsController@ajax
+  methods:
+    - POST
+  permission: PermissionsModule
+
+# Pobieranie paczek uprawnień #
+
+
+# Dodawanie paczki uprawnień #
+
+permissions.create:
+  path: /dashboard/permissions/create
+  controller: Selene\Modules\PermissionsModule\Http\Controllers\PermissionsController@create
+  methods:
+    - GET
+  permission: PermissionsModule.permissions.create
+
+permissions.store:
+  path: /dashboard/permissions
+  controller: Selene\Modules\PermissionsModule\Http\Controllers\PermissionsController@store
+  methods:
+    - POST
+  permission: PermissionsModule.permissions.create
+
+# Dodawanie paczki uprawnień #
+
+# Edytowanie paczki uprawnień #
+
+permissions.edit:
+  path: /dashboard/permissions/{{permission}}/edit
+  controller: Selene\Modules\PermissionsModule\Http\Controllers\PermissionsController@edit
+  methods:
+    - GET
+  permission: PermissionsModule.permissions.edit
+
+permissions.update:
+  path: /dashboard/permissions/{{permission}}
+  controller: Selene\Modules\PermissionsModule\Http\Controllers\PermissionsController@update
+  methods:
+    - PUT
+    - PATCH
+  permission: PermissionsModule.permissions.edit
+
+# Edytowanie paczki uprawnień #
+
+# Usuwanie paczki uprawnień #
+
+permissions.destroy:
+  path: /dashboard/permissions/{{permission}}
+  controller: Selene\Modules\PermissionsModule\Http\Controllers\PermissionsController@destroy
+  methods:
+    - DELETE
+  permission: PermissionsModule.permissions.delete
+
+# Usuwanie paczki uprawnień #
+
