@@ -1,0 +1,6 @@
+permissions.create:
+  name: Dodawanie
+permissions.edit:
+  name: Edytowanie
+permissions.delete:
+  name: Usuwanie

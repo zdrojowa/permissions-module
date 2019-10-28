@@ -1,0 +1,23 @@
+{
+    "name": "zdrojowa/permissions-module",
+    "type": "library",
+    "description": "",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Jakub Kosiński",
+            "email": "jakub.kosinski.99@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "zdrojowa/laravel-blade-javascript": "~2.4.1",
+        "zdrojowa/cms-kernel": "~1.2",
+        "ext-json": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Selene\\Modules\\PermissionsModule\\": "src/"
+        }
+    }
+}
